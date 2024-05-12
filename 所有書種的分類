@@ -1,0 +1,6 @@
+soupdiv = soup.find('div', class_='mod_b type02_l001-1 clearfix')
+hrefs=soupdiv.select('a')
+ob=1
+for i in hrefs:
+    print('若要找分類'+'{}'.format(i.text)+'請輸入'+str(ob))
+    ob+=1
